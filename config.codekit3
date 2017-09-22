@@ -102,6 +102,16 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/css\/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -109,6 +119,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/style.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style.min-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -237,6 +257,46 @@
 		"oAP": "\/css\/vendor\/photoswipe-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome.otf",
+		"oF": 0
 		},
 	"\/fonts\/icomoon demo\/demo-files\/demo.css": {
 		"aP": 1,
@@ -492,12 +552,32 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/js\/custom-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/custom-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/custom.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/custom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/custom.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/custom.min-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -512,12 +592,32 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/scripts-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/scripts.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/scripts.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts.min-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -608,16 +708,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/vendor\/jquery.easing.1.3-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/vendor\/jquery.flexslider-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/vendor\/jquery.flexslider-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -735,6 +825,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/scss\/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -747,6 +847,18 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/videos\/eg.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/videos\/eg.mp4",
+		"oF": 0
+		},
+	"\/videos\/eg.webm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/videos\/eg.webm",
+		"oF": 0
 		}
 	},
 "hooks": [
