@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   color: $brand-black;
   line-height: 1.5;
   font-family: $font-secondary;
+
+  @media screen and (max-width: $screen-sm) {
+    line-height: 1.1;
+  }
 }
 
 h1 {
@@ -262,19 +266,24 @@ section[data-section="menu"] {
   position: relative;
   margin-top: -140px;
   z-index: -1;
+
   @media screen and (max-width: $screen-sm) {
     margin-top: 0;
   }
 }
 .probootstrap-section {
   padding: 7em 0;
+
   &.probootstrap-border-top {
     border-top: 1px solid rgba(0, 0, 0, .1);
   }
+
   &.probootstrap-border-bottom {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
+
   > .container {
+
     &.probootstrap-border-top {
       padding-top: 50px;
       border-top: 1px solid rgba(0, 0, 0, .1);
@@ -288,6 +297,7 @@ section[data-section="menu"] {
     padding: 3em 0;
   }
 }
+
 .probootstrap-section-bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -299,7 +309,9 @@ section[data-section="menu"] {
     padding: 3em 0;
     height: 300px;
   }
+
   &.overlay {
+
     &:before {
       content: "";
       background: rgba(0, 0, 0, .2);
@@ -310,19 +322,14 @@ section[data-section="menu"] {
       bottom: 0;
     }
   }
-  //.probootstrap-heading {
-  //
-  //  margin-top: 250px;
-  //  @media screen and (max-width: $screen-sm) {
-  //    margin-top: 50px;
-  //  }
-  //}
 }
+
 .probootstrap-footer {
   background-size: cover;
   background: $brand-black;
   padding: 7em 0;
   color: rgba(255, 255, 255, .7);
+
   @media screen and (max-width: $screen-sm) {
     padding: 2em 0;
   }
@@ -336,8 +343,9 @@ section[data-section="menu"] {
 
   .probootstrap-footer-widget {
     margin-bottom: 0;
+
     @media screen and (max-width: $screen-sm) {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -354,6 +362,7 @@ section[data-section="menu"] {
 
   p {
     font-size: 14px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -361,10 +370,6 @@ section[data-section="menu"] {
 
   p.copyright-text {
     margin-top: 14px;
-
-    @media screen and (max-width: $screen-sm) {
-      margin-bottom: 20px;
-    }
   }
 }
 
@@ -373,6 +378,10 @@ section[data-section="menu"] {
   margin: 0;
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (max-width: $screen-sm) {
+    justify-content: center;
+  }
 
   &.right {
     text-align: right;
@@ -1292,18 +1301,7 @@ section[data-section="menu"] {
   height: 800px;
 
   @media screen and (max-width: $screen-xs) {
-    height: 400px;
-  }
-}
-
-.sm {
-
-  .slider-height {
-    height: 500px;
-
-    @media screen and (max-width: $screen-xs) {
-      height: 300px;
-    }
+    //height: 400px;
   }
 }
 
@@ -1333,15 +1331,18 @@ section[data-section="menu"] {
     top: -50px;
     font-weight: 700;
     line-height: 40px;
+
     @media screen and (max-width: $screen-sm) {
       font-size: 50px - 10px;
     }
   }
+
   &.dark {
     .secondary-heading {
       color: $brand-black;
     }
   }
+
   .seperator {
     display: block;
     margin: 0 auto 10px auto;
@@ -1349,6 +1350,7 @@ section[data-section="menu"] {
     font-weight: 300;
   }
 }
+
 .flexslider {
   position: relative;
   z-index: 2;
@@ -1366,19 +1368,15 @@ section[data-section="menu"] {
   }
 
   .probootstrap-slider-text {
-    //margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @media screen and (max-width: $screen-xs) {
-      //margin-top: 30px;
-    }
 
     .sub-heading {
       font-size: 20px;
       margin-top: -40px;
       color: rgba(255, 255, 255, .7);
+
       a {
         color: rgba(255, 255, 255, 1);
       }
@@ -1479,6 +1477,14 @@ section[data-section="menu"] {
   opacity: 0.7;
   left: 0px;
 }
+.flex-next,
+.flex-prev {
+  @media screen and (max-width: $screen-sm) {
+    opacity: 0.7 !important;
+    top: auto !important;
+    bottom: 20px !important;
+  }
+}
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
@@ -1511,139 +1517,34 @@ section[data-section="menu"] {
   background: rgba(255, 255, 255, 1);
   cursor: default;
 }
-/* Owl carousel override style */
-.owl-carousel {
-  margin-bottom: 100px;
-  &.border-rounded {
-    .item {
-      border: 1px solid rgba(0, 0, 0, .1);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-  }
-}
-.owl-carousel .owl-controls,
-.owl-carousel-posts .owl-controls, {
-  margin-top: 0;
-}
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 50%;
-  // margin-top: -39px;
-  transform: translateY(-50%);
-  z-index: 9999;
-  position: absolute;
-  transition: .2s all;
-}
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 24%;
-}
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-next {
-  right: 20px;
-}
-.owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  left: 20px;
-}
-.owl-carousel-posts .owl-controls .owl-nav .owl-next,
-.owl-carousel-posts .owl-controls .owl-nav .owl-prev,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-next,
-.owl-carousel-fullwidth .owl-controls .owl-nav .owl-prev {
-  i {
-    color: $brand-black;
-  }
-  &:hover {
-    i {
-      color: $brand-black;
-    }
-  }
-}
-.owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next,
-.owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev {
-  i {
-    color: $brand-white;
-  }
-  &:hover {
-    i {
-      color: $brand-white;
-    }
-  }
-}
-.owl-theme .owl-controls .owl-nav {
-  @media screen and (max-width: $screen-sm) {
-    display: none;
-  }
-}
-.owl-theme .owl-controls .owl-nav [class*="owl-"] {
-  background: none !important;
-  i {
-    font-size: 24px;
-    background: rgba($brand-primary, 1) !important;
-    padding: 12px;
-    transition: .5s all;
-  }
-  &:hover, &:focus {
-    i {
-      background: rgba($brand-primary, 1) !important;
-    }
-  }
-}
-.owl-theme .owl-dots {
-  position: absolute;
-  bottom: -30px;
-  width: 100%;
-  text-align: center;
-}
-.owl-carousel-fullwidth.owl-theme .owl-dots {
-  bottom: -30px;
-  margin-bottom: -2.5em;
-}
-.owl-work.owl-theme .owl-dots {
-  bottom: -30px;
-  margin-bottom: -2.5em;
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 8px;
-  height: 8px;
-  background: rgba($brand-black, .2);
-  transition: .2s all;
-  border: 2px solid transparent;
-  &:hover {
-    background: none;
-    border: 2px solid rgba($brand-black, .2);
-  }
-}
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: none;
-  border: 2px solid $brand-black;
-}
 // Helper
 .probootstrap-gutter0 {
+
   > div[class*='col-'] {
     padding-right: 0px;
     padding-left: 0px;
+
     @media screen and (max-width: $screen-xs) {
       padding-right: 15px;
       padding-left: 15px;
     }
   }
 }
+
 .probootstrap-gutter40 {
   > div[class*='col-'] {
     padding-right: 20px;
     padding-left: 20px;
+
     @media screen and (max-width: $screen-xs) {
       padding-right: 15px;
       padding-left: 15px;
     }
   }
 }
+
 .probootstrap-gutter60 {
+
   > div[class*='col-'] {
     padding-right: 30px;
     padding-left: 30px;
@@ -1771,6 +1672,10 @@ video {
 
 .container {
   padding: 0 6em;
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 1em;
+  }
 }
 
 .probootstrap-section {

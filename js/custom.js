@@ -496,17 +496,22 @@
   //MAIN MENU
   var $mainMenuUl = $('#mainMenuUl');
   var $mainMenuClose = $('#mainMenuClose');
-  //var $page = $('.page');
   var $mainVideo = $('.main-video');
-  //var $content = $('#main');
+  var $mainMenuItem = $('.main-menu__link');
+
 
   $mainMenuClose.on('click', function() {
     $(this).toggleClass('active');
     $mainMenuUl.toggleClass('visible');
-    //$page.toggleClass('passive');
     $mainVideo.toggleClass('passive');
-    //$content.toggleClass('behind');
   });
+
+  $mainMenuItem.on('click', function() {
+    $mainMenuClose.toggleClass('active');
+    $mainMenuUl.toggleClass('visible');
+    $mainVideo.toggleClass('passive');
+  });
+
 
 	// HOME VIDEO
 
