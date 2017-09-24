@@ -12,6 +12,13 @@
   font-weight: normal;
   font-style: normal; }
 
+.element-invisible {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
 html {
   overflow-x: hidden; }
 
@@ -24,7 +31,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
   line-height: 1.5;
-  font-family: "Roboto Slab", serif; }
+  font-family: "Dosis", sans-serif; }
 
 h1 {
   font-size: 46px; }
@@ -50,6 +57,18 @@ a {
   a:hover, a:focus, a:active {
     color: #ff9725;
     text-decoration: none; }
+
+.white {
+  color: #fff !important; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.nh {
+  height: auto !important; }
+
+.nm {
+  margin: 0 !important; }
 
 .hero-text-heading, .probootstrap-hero h1 {
   font-size: 52px;
@@ -239,17 +258,23 @@ section[data-section="menu"] {
   background: #262626;
   padding: 20px 0;
   color: #fff; }
+  .probootstrap-copyright a {
+    color: #fff; }
   .probootstrap-copyright p {
     font-size: 14px; }
     .probootstrap-copyright p:last-child {
       margin-bottom: 0; }
-  @media screen and (max-width: 768px) {
-    .probootstrap-copyright p.copyright-text {
-      margin-bottom: 20px; } }
+  .probootstrap-copyright p.copyright-text {
+    margin-top: 14px; }
+    @media screen and (max-width: 768px) {
+      .probootstrap-copyright p.copyright-text {
+        margin-bottom: 20px; } }
 
 .probootstrap-footer-social {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; }
   .probootstrap-footer-social.right {
     text-align: right; }
     @media screen and (max-width: 768px) {
@@ -258,13 +283,24 @@ section[data-section="menu"] {
   .probootstrap-footer-social li {
     display: inline;
     padding: 0;
-    margin: 0;
+    margin: 0 10px 0 0;
     list-style: none; }
     .probootstrap-footer-social li a {
       padding: 10px;
-      font-size: 22px; }
-    .probootstrap-footer-social li:first-child > a {
-      padding-left: 0; }
+      font-size: 22px;
+      background: transparent;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      transition: color .3s ease-in-out, background .3s ease-in-out; }
+      .probootstrap-footer-social li a:hover {
+        color: #333;
+        background: #fff; }
+    .probootstrap-footer-social li i {
+      line-height: 1.4; }
 
 .probootstrap-block-image {
   background: #ffffff;
@@ -290,13 +326,12 @@ section[data-section="menu"] {
       margin-bottom: 0; }
 
 .probootstrap-custom-link {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #000000;
   display: inline-block;
   text-decoration: none;
   position: relative;
-  padding-bottom: 5px; }
+  padding-bottom: 3px;
+  margin-top: 5px;
+  color: #fff; }
   .probootstrap-custom-link.link-sm {
     font-size: 14px; }
   .probootstrap-custom-link:before {
@@ -317,9 +352,9 @@ section[data-section="menu"] {
     display: block;
     width: 100%;
     height: 2px;
-    background: #000; }
+    background: #fff; }
   .probootstrap-custom-link:hover {
-    color: #000000; }
+    color: #fff; }
     .probootstrap-custom-link:hover:before {
       width: 100%;
       background: #FFA33E; }
@@ -947,6 +982,12 @@ section[data-section="menu"] {
     .slider-height, .flexslider, .flexslider .slides > li {
       height: 400px; } }
 
+.sm .slider-height, .sm .flexslider, .sm .flexslider .slides > li, .flexslider .sm .slides > li {
+  height: 500px; }
+  @media screen and (max-width: 480px) {
+    .sm .slider-height, .sm .flexslider, .sm .flexslider .slides > li, .flexslider .sm .slides > li {
+      height: 300px; } }
+
 .probootstrap-heading .primary-heading {
   font-family: "Dosis", sans-serif;
   color: #000;
@@ -1013,6 +1054,8 @@ section[data-section="menu"] {
       left: 0;
       right: 0;
       bottom: 0; }
+  .flexslider .slides.sm > li {
+    height: 500px !important; }
   .flexslider .flex-control-paging {
     position: absolute;
     bottom: 30px;
@@ -1456,8 +1499,16 @@ video {
       width: 20px; }
 
 .eg-intro {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #fff; }
 
 .eg-img-intro {
   margin-bottom: -2em; }
+
+.team-heading {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-size: 34px; }
+
+.edged {
+  margin-left: -2em; }

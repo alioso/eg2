@@ -268,6 +268,12 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
 	"\/fonts\/fontawesome-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -646,6 +652,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/ru.jpg": {
+		"ft": 16384,
+		"iS": 1142044,
+		"oA": 0,
+		"oAP": "\/img\/ru.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -772,16 +788,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/vendor\/isotope.pkgd.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/vendor\/isotope.pkgd.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/vendor\/jquery.appear.js": {
 		"ft": 64,
 		"ma": 0,
@@ -842,32 +848,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/vendor\/jquery.timepicker.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/vendor\/jquery.timepicker.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/vendor\/jquery.waypoints.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/vendor\/jquery.waypoints.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/vendor\/owl.carousel.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/vendor\/owl.carousel.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

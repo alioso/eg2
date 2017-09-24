@@ -28,93 +28,93 @@
 	/*----------------------------------------
 		Carousel
 	----------------------------------------*/
-	var owlCarousel = function(){
-
-		var owl = jQuery('.owl-carousel-carousel');
-		owl.owlCarousel({
-			items: 3,
-			loop: true,
-			margin: 20,
-			nav: true,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	     	],
-	     	responsive:{
-	        0:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    	}
-		});
-
-		var owl = jQuery('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 20,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-			autoplay: true,
-			navText: [
-		      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
-		      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
-	     	]
-		});
-
-		var owl = jQuery('.owl-work');
-		owl.owlCarousel({
-			stagePadding: 150,
-			loop: true,
-			margin: 20,
-			nav: true,
-			dots: false,
-			mouseDrag: false,
-			autoWidth: true,
-			autoHeight: true,
-	    autoplay: true,
-	    autoplayTimeout:2000,
-	    autoplayHoverPause:true,
-			navText: [	
-				"<i class='icon-chevron-thin-left'></i>",
-				"<i class='icon-chevron-thin-right'></i>"
-			],
-			responsive:{
-			  0:{
-		      items:1,
-		      stagePadding: 10
-			  },
-			  500:{
-			  	items:2,
-		      stagePadding: 20
-			  },
-			  600:{
-		      items:2,
-		      stagePadding: 40
-			  },
-			  800: {
-			  	items:2,
-			  	stagePadding: 100
-			  },
-			  1100:{
-		      items:3
-			  },
-			  1400:{
-		      items:4
-			  },
-			}
-		});
-	};
+	// var owlCarousel = function(){
+  //
+	// 	var owl = jQuery('.owl-carousel-carousel');
+	// 	owl.owlCarousel({
+	// 		items: 3,
+	// 		loop: true,
+	// 		margin: 20,
+	// 		nav: true,
+	// 		dots: true,
+	// 		smartSpeed: 800,
+	// 		autoHeight: true,
+	// 		navText: [
+	// 	      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
+	// 	      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
+	//      	],
+	//      	responsive:{
+	//         0:{
+	//             items:1
+	//         },
+	//         600:{
+	//             items:2
+	//         },
+	//         1000:{
+	//             items:3
+	//         }
+	//     	}
+	// 	});
+  //
+	// 	var owl = jQuery('.owl-carousel-fullwidth');
+	// 	owl.owlCarousel({
+	// 		items: 1,
+	// 		loop: true,
+	// 		margin: 20,
+	// 		nav: false,
+	// 		dots: true,
+	// 		smartSpeed: 800,
+	// 		autoHeight: true,
+	// 		autoplay: true,
+	// 		navText: [
+	// 	      "<i class='icon-keyboard_arrow_left owl-direction'></i>",
+	// 	      "<i class='icon-keyboard_arrow_right owl-direction'></i>"
+	//      	]
+	// 	});
+  //
+	// 	var owl = jQuery('.owl-work');
+	// 	owl.owlCarousel({
+	// 		stagePadding: 150,
+	// 		loop: true,
+	// 		margin: 20,
+	// 		nav: true,
+	// 		dots: false,
+	// 		mouseDrag: false,
+	// 		autoWidth: true,
+	// 		autoHeight: true,
+	//     autoplay: true,
+	//     autoplayTimeout:2000,
+	//     autoplayHoverPause:true,
+	// 		navText: [
+	// 			"<i class='icon-chevron-thin-left'></i>",
+	// 			"<i class='icon-chevron-thin-right'></i>"
+	// 		],
+	// 		responsive:{
+	// 		  0:{
+	// 	      items:1,
+	// 	      stagePadding: 10
+	// 		  },
+	// 		  500:{
+	// 		  	items:2,
+	// 	      stagePadding: 20
+	// 		  },
+	// 		  600:{
+	// 	      items:2,
+	// 	      stagePadding: 40
+	// 		  },
+	// 		  800: {
+	// 		  	items:2,
+	// 		  	stagePadding: 100
+	// 		  },
+	// 		  1100:{
+	// 	      items:3
+	// 		  },
+	// 		  1400:{
+	// 	      items:4
+	// 		  },
+	// 		}
+	// 	});
+	// };
 
 	/*----------------------------------------
 		Slider
@@ -124,7 +124,7 @@
 	    animation: "fade",
 	    prevText: "",
 	    nextText: "",
-	    slideshow: true
+	    slideshow: false
 	  });
 	}
 
@@ -387,23 +387,22 @@
 		}
 	};
 
-	var galleryMasonry = function() {
-		// isotope 
-		if (jQuery('.portfolio-feed').length > 0 ) {
-			var $container = $('.portfolio-feed');
-			$container.imagesLoaded(function() {
-				$container.isotope({
-				  itemSelector: '.grid-item',
-				  percentPosition: true,
-				  masonry: {
-				    columnWidth: '.grid-sizer',
-				    gutter: '.gutter-sizer'
-				  }
-				});
-			});
-		}
-
-	};
+	// var galleryMasonry = function() {
+	// 	// isotope
+	// 	if (jQuery('.portfolio-feed').length > 0 ) {
+	// 		var $container = $('.portfolio-feed');
+	// 		$container.imagesLoaded(function() {
+	// 			$container.isotope({
+	// 			  itemSelector: '.grid-item',
+	// 			  percentPosition: true,
+	// 			  masonry: {
+	// 			    columnWidth: '.grid-sizer',
+	// 			    gutter: '.gutter-sizer'
+	// 			  }
+	// 			});
+	// 		});
+	// 	}
+	// };
 
 	var stellarInit = function() {
 		if( !isMobile.any() ) {
@@ -411,13 +410,13 @@
 		}
 	};
 
-	var dateTimePicker = function() {
-		jQuery('#time').timepicker();
-		jQuery('#date').datepicker({
-		  'format': 'm/d/yyyy',
-		  'autoclose': true
-		});
-	};
+	// var dateTimePicker = function() {
+	// 	jQuery('#time').timepicker();
+	// 	jQuery('#date').datepicker({
+	// 	  'format': 'm/d/yyyy',
+	// 	  'autoclose': true
+	// 	});
+	// };
 
 
 	// Page Nav
@@ -482,15 +481,15 @@
 		if (jQuery('.probootstrap-gallery').length > 0) {
 			initPhotoSwipeFromDOM('.probootstrap-gallery');
 		}
-		galleryMasonry();
+		//galleryMasonry();
 		stellarInit();
-		dateTimePicker();
+		//dateTimePicker();
 		clickMenu();
 		navigationSection();
 	});
 
 	jQuery(window).load(function(){
-		owlCarousel();
+		//owlCarousel();
 		flexSlider();
 	});
 
@@ -524,7 +523,7 @@
       timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
     };
-  };
+  }
 
   var videoContainer = document.querySelector('#video-container');
   var videoElem = document.querySelector('#video-container video');
