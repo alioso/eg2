@@ -16,15 +16,15 @@ html {
   overflow-x: hidden; }
 
 body {
-  color: #8b8e94;
-  line-height: 24px;
-  font-size: 15px;
-  font-family: "Open Sans", Arial, sans-serif; }
+  color: #000;
+  line-height: 28px;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
   line-height: 1.5;
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Roboto Slab", serif; }
 
 h1 {
   font-size: 46px; }
@@ -215,11 +215,6 @@ section[data-section="menu"] {
     left: 0;
     right: 0;
     bottom: 0; }
-  .probootstrap-section-bg .probootstrap-heading {
-    margin-top: 250px; }
-    @media screen and (max-width: 768px) {
-      .probootstrap-section-bg .probootstrap-heading {
-        margin-top: 50px; } }
 
 .probootstrap-footer {
   background-size: cover;
@@ -242,11 +237,8 @@ section[data-section="menu"] {
 
 .probootstrap-copyright {
   background: #262626;
-  padding: 20px 0; }
-  .probootstrap-copyright a {
-    color: rgba(255, 255, 255, 0.2); }
-    .probootstrap-copyright a:hover {
-      color: white; }
+  padding: 20px 0;
+  color: #fff; }
   .probootstrap-copyright p {
     font-size: 14px; }
     .probootstrap-copyright p:last-child {
@@ -950,17 +942,18 @@ section[data-section="menu"] {
 
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider .slides > li {
-  height: 750px; }
+  height: 800px; }
   @media screen and (max-width: 480px) {
     .slider-height, .flexslider, .flexslider .slides > li {
       height: 400px; } }
 
 .probootstrap-heading .primary-heading {
-  font-family: "Pinyon Script", serif;
-  color: #FFA33E;
+  font-family: "Dosis", sans-serif;
+  color: #000;
   margin: 0;
   padding: 0;
-  font-size: 80px; }
+  text-transform: uppercase;
+  font-size: 70px; }
   @media screen and (max-width: 768px) {
     .probootstrap-heading .primary-heading {
       font-size: 70px; } }
@@ -995,11 +988,14 @@ section[data-section="menu"] {
   background: none;
   border: none;
   margin: 0 0 0; }
+  .flexslider div {
+    height: 100%; }
+  .flexslider .probootstrap-heading {
+    margin-top: 0; }
   .flexslider .probootstrap-slider-text {
-    margin-top: 300px; }
-    @media screen and (max-width: 480px) {
-      .flexslider .probootstrap-slider-text {
-        margin-top: 150px; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     .flexslider .probootstrap-slider-text .sub-heading {
       font-size: 20px;
       margin-top: -40px;
@@ -1332,9 +1328,34 @@ video {
 
 .push {
   height: 100vh; }
+  .push--small {
+    height: 7em; }
+  .push--medium {
+    height: 70vh; }
+
+.container {
+  padding: 0 6em; }
 
 .probootstrap-section {
   position: relative; }
+  .probootstrap-section-bg {
+    padding: 5em; }
+
+.blue-back {
+  background: rgba(176, 201, 199, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%; }
+
+.probootstrap-heading {
+  margin-top: 150px; }
+  @media screen and (max-width: 768px) {
+    .probootstrap-heading {
+      margin-top: 50px; } }
 
 .main-menu {
   position: relative;
@@ -1349,16 +1370,16 @@ video {
     left: 0;
     text-align: center;
     width: 100%;
+    background: rgba(0, 0, 0, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity .3s ease-in-out; }
-    .main-menu__links:hover, .main-menu__links:focus {
-      background: transparent !important; }
   .main-menu.visible {
     opacity: .9;
     z-index: 3; }
   .main-menu__link {
+    font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     color: white; }
     .main-menu__link:hover, .main-menu__link:focus {
@@ -1433,3 +1454,10 @@ video {
       width: 15px; }
     .main-menu__close--third {
       width: 20px; }
+
+.eg-intro {
+  font-size: 1.3em;
+  color: #fff; }
+
+.eg-img-intro {
+  margin-bottom: -2em; }

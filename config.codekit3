@@ -102,6 +102,16 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/css\/fonts.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/fonts-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/style-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -414,6 +424,107 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/img\/ar-sm.jpg": {
+		"ft": 16384,
+		"iS": 44636,
+		"oA": 0,
+		"oAP": "\/img\/ar-sm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/ar.jpg": {
+		"ft": 16384,
+		"iS": 76790,
+		"oA": 0,
+		"oAP": "\/img\/ar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/bl-sm.jpg": {
+		"ft": 16384,
+		"iS": 49123,
+		"oA": 0,
+		"oAP": "\/img\/bl-sm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/bl.jpg": {
+		"ft": 16384,
+		"iS": 80493,
+		"oA": 0,
+		"oAP": "\/img\/bl.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/cf.jpg": {
+		"ft": 16384,
+		"iS": 67780,
+		"oA": 0,
+		"oAP": "\/img\/cf.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/cr-sm.jpg": {
+		"ft": 16384,
+		"iS": 80717,
+		"oA": 0,
+		"oAP": "\/img\/cr-sm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/cr.jpg": {
+		"ft": 16384,
+		"iS": 506151,
+		"oA": 0,
+		"oAP": "\/img\/cr.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/eg_logo.png": {
+		"ft": 32768,
+		"iS": 6859,
+		"oA": 0,
+		"oAP": "\/img\/eg_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/ev-sm.jpg": {
+		"ft": 16384,
+		"iS": 157871,
+		"oA": 0,
+		"oAP": "\/img\/ev-sm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/ev.jpg": {
+		"ft": 16384,
+		"iS": 506151,
+		"oA": 0,
+		"oAP": "\/img\/ev.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/hero_bg_1.jpg": {
 		"ft": 16384,
 		"iS": 17170,
@@ -526,20 +637,9 @@
 		},
 	"\/img\/logo.png": {
 		"ft": 32768,
-		"iS": 3903,
+		"iS": 25007,
 		"oA": 0,
 		"oAP": "\/img\/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/logo@2x.png": {
-		"ft": 32768,
-		"iS": 7869,
-		"oA": 0,
-		"oAP": "\/img\/logo@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -712,6 +812,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/vendor\/jquery.flexslider-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/vendor\/jquery.flexslider-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/vendor\/jquery.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -778,6 +888,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/vendor\/photoswipe.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/vendor\/rellax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/vendor\/rellax.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

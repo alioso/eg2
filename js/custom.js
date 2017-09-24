@@ -576,4 +576,10 @@
 
   window.addEventListener('resize', updateVideo);
 
+  var rellax = new Rellax('.main-logo', {
+    speed: +1,
+    center: false,
+    round: true,
+  });
+
 })();

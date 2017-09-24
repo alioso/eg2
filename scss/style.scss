@@ -6,13 +6,15 @@
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
 @import 'custom-settings';
+
 html {
   overflow-x: hidden;
 }
+
 body {
-  color: #8b8e94;
-  line-height: 24px;
-  font-size: 15px;
+  color: #000;
+  line-height: 28px;
+  font-size: 18px;
   font-family: $font-primary;
 }
 // Typography
@@ -113,15 +115,18 @@ a {
   .probootstrap-hero-text {
     padding-top: 200px;
     padding-bottom: 200px;
+
     @media screen and (max-width: $screen-sm) {
       padding-top: 50px;
       padding-bottom: 50px;
     }
   }
   &.probootstrap-sm-hero {
+
     .probootstrap-hero-text {
       padding-top: 150px;
       padding-bottom: 150px;
+
       @media screen and (max-width: $screen-sm) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -129,9 +134,11 @@ a {
     }
   }
   &.probootstrap-xs-hero {
+
     .probootstrap-hero-text {
       padding-top: 90px;
       padding-bottom: 90px;
+
       @media screen and (max-width: $screen-sm) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -144,19 +151,23 @@ a {
   p {
     @extend .hero-text-subheading;
   }
+
   .btn {
     position: relative;
     font-size: 18px;
     width: 200px;
+
     @media screen and (max-width: $screen-xs) {
       width: 100%;
       margin-bottom: 10px;
     }
+
     &.btn-primary {
       text-transform: uppercase;
       padding: 15px 20px;
     }
   }
+
   &.probootstrap-hero-colored {
     background: $brand-primary;
     h1 {
@@ -251,6 +262,7 @@ section[data-section="menu"] {
   padding: 7em 0;
   position: relative;
   height: 600px;
+
   @media screen and (max-width: $screen-sm) {
     padding: 3em 0;
     height: 300px;
@@ -266,12 +278,13 @@ section[data-section="menu"] {
       bottom: 0;
     }
   }
-  .probootstrap-heading {
-    margin-top: 250px;
-    @media screen and (max-width: $screen-sm) {
-      margin-top: 50px;
-    }
-  }
+  //.probootstrap-heading {
+  //
+  //  margin-top: 250px;
+  //  @media screen and (max-width: $screen-sm) {
+  //    margin-top: 50px;
+  //  }
+  //}
 }
 .probootstrap-footer {
   background-size: cover;
@@ -281,12 +294,14 @@ section[data-section="menu"] {
   @media screen and (max-width: $screen-sm) {
     padding: 2em 0;
   }
+
   h3 {
     font-size: 18px;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: $brand-white;
   }
+
   .probootstrap-footer-widget {
     margin-bottom: 0;
     @media screen and (max-width: $screen-sm) {
@@ -294,27 +309,27 @@ section[data-section="menu"] {
     }
   }
 }
+
 .probootstrap-copyright {
   background: lighten($brand-black, 15%);
   padding: 20px 0;
-  a {
-    color: rgba(255, 255, 255, .2);
-    &:hover {
-      color: rgba(255, 255, 255, 1);
-    }
-  }
+  color: #fff;
+
+
   p {
     font-size: 14px;
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   p.copyright-text {
     @media screen and (max-width: $screen-sm) {
       margin-bottom: 20px;
     }
   }
 }
+
 .probootstrap-footer-social {
   padding: 0;
   margin: 0;
@@ -432,9 +447,11 @@ section[data-section="menu"] {
   text-decoration: none;
   position: relative;
   padding-bottom: 5px;
+
   &.link-sm {
     font-size: 14px;
   }
+
   &:before {
     content: "";
     display: block;
@@ -446,6 +463,7 @@ section[data-section="menu"] {
     z-index: 2;
     transition: width .5s;
   }
+
   &:after {
     z-index: 1;
     position: absolute;
@@ -468,10 +486,12 @@ section[data-section="menu"] {
 .image-wrap {
   overflow: hidden;
   position: relative;
+
   @media screen and (max-width: $screen-xs) {
     width: 100%;
     height: 200px;
   }
+
   .image-bg {
     position: absolute;
     left: 50%;
@@ -1213,22 +1233,27 @@ section[data-section="menu"] {
 }
 /* Flexslider override style */
 .slider-height {
-  height: 750px;
+  height: 800px;
+
   @media screen and (max-width: $screen-xs) {
     height: 400px;
   }
 }
 .probootstrap-heading {
+
   .primary-heading {
     font-family: $font-secondary;
-    color: $brand-primary;
+    color: #000;
     margin: 0;
     padding: 0;
-    font-size: 80px;
+    text-transform: uppercase;
+    font-size: 70px;
+
     @media screen and (max-width: $screen-sm) {
       font-size: 80px - 10px;
     }
   }
+
   .secondary-heading {
     text-transform: uppercase;
     color: $brand-white;
@@ -1263,10 +1288,23 @@ section[data-section="menu"] {
   border: none;
   margin: 0 0 0;
   @extend .slider-height;
+
+  div {
+    height: 100%;
+  }
+
+  .probootstrap-heading {
+    margin-top: 0;
+  }
+
   .probootstrap-slider-text {
-    margin-top: 300px;
+    //margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @media screen and (max-width: $screen-xs) {
-      margin-top: 150px;
+      //margin-top: 30px;
     }
 
     .sub-heading {
@@ -1640,10 +1678,45 @@ video {
 
 .push {
   height: 100vh;
+
+  &--small {
+    height: 7em;
+  }
+
+  &--medium {
+    height: 70vh;
+  }
+}
+
+.container {
+  padding: 0 6em;
 }
 
 .probootstrap-section {
   position: relative;
+
+  &-bg {
+    padding: 5em;
+  }
+}
+
+.blue-back {
+  background: rgba(176, 201, 199, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.probootstrap-heading {
+  margin-top: 150px;
+
+  @media screen and (max-width: $screen-sm) {
+    margin-top: 50px;
+  }
 }
 
 .main-menu {
@@ -1660,16 +1733,11 @@ video {
     left: 0;
     text-align: center;
     width: 100%;
-    //background: $tangerine;
+    background: rgba(0, 0, 0, .95);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity .3s ease-in-out;
-
-    &:hover,
-    &:focus {
-      background: transparent !important;
-    }
   }
 
   &.visible {
@@ -1680,6 +1748,7 @@ video {
   &__link {
     //@include link(white, none, white, none);
     //@include font-size(1.3);
+    font-family: $font-secondary;
 
     text-transform: uppercase;
     color: white;
@@ -1805,4 +1874,13 @@ video {
       width: 20px;
     }
   }
+}
+
+.eg-intro {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.eg-img-intro {
+  margin-bottom: -2em;
 }
